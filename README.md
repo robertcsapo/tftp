@@ -23,3 +23,9 @@ To map the volume to a host directory
 ```
 docker run -p 0.0.0.0:69:69/udp -v /var/tftpboot:/var/tftpboot -i -t pghalliday/tftp
 ```
+
+To map local directory to the container
+
+```
+docker run -p 0.0.0.0:69:69/udp -v $PWD:/var/tftpboot -i -t pghalliday/tftp
+```
