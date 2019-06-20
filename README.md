@@ -29,3 +29,15 @@ To map local directory to the container
 ```
 docker run -p 0.0.0.0:69:69/udp -v $PWD:/var/tftpboot -i -t robertcsapo/tftp
 ```
+
+Run temporary in local directory
+
+```
+docker run --rm -p 0.0.0.0:69:69/udp -v $PWD:/var/tftpboot -i -t robertcsapo/tftp
+```
+
+Clean up
+
+```
+docker rmi robertcsapo/tftp
+```
